@@ -1,0 +1,59 @@
+#include<iostream>
+using namespace std;
+
+class overloading
+{
+
+public:
+int Add(int a,int b)
+
+{
+cout<<"Addition of integer\n";
+}
+
+float Add (float a,float b)
+{
+cout<<"Addition of float\n";
+}
+
+double Add(double a,double b)
+{
+cout<<"Addition of double\n";
+}
+
+int Add(int a,int b,int c)
+
+{
+cout<<"Addition of 3 integer\n";
+}
+
+void Fun(int a,float b)
+{}
+
+void Fun(float a,int b)
+{}
+
+};
+int main()
+
+{
+overloading obj;
+int i;
+float f;
+doublee d;
+
+i = obj.Add(11,21);
+cout<<i<<"\n";
+
+i = obj.Add(11,21,51);
+cout<<i<<"\n";
+
+f = obj.Add(10.9f,89.5f);
+cout<<j<<"\n";
+
+d =  obj.Add(10.9,89.5);
+cout<<i<<"\n";
+
+
+return 0;
+}
